@@ -139,6 +139,14 @@ public class Main {
                 ejercicio22.run();
                 break;
 
+            case 40:
+                Ejercicio40 ejercicio40 = new Ejercicio40();
+                ejercicio40.run();
+                break;
+            case 41:
+                Ejercicio41 ejercicio41 = new Ejercicio41();
+                ejercicio41.run();
+                break;
             default:
                 System.out.println("Opción no válida");
                 break;
