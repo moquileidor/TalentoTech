@@ -52,7 +52,7 @@ public class Vehiculo {
                 "marca='" + marca + '\'' +
                 ", modelo='" + modelo + '\'' +
                 ", referencia='" + referencia + '\'' +
-                ", precio=" + precio +
+                ", precio=" + precio+
                 '}';
     }
 }
