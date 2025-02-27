@@ -24,9 +24,31 @@ public class Ejercicio11 {
         double pesoAdultos = 0;
         double pesoViejos = 0;
 
+        for (int i = 0; i < 50; i++) {
+            System.out.println("Ingrese la edad de la persona " + (i + 1));
+            int edad = sc.nextInt();
+            System.out.println("Ingrese el peso de la persona " + (i + 1));
+            double peso = sc.nextDouble();
 
+            if (edad >= 0 && edad <= 13) {
+                ninos++;
+                pesoNinos += peso;
+            } else if (edad >= 13 && edad <= 29) {
+                jovenes++;
+                pesoJovenes += peso;
+            } else if (edad >= 30 && edad <= 59) {
+                adultos++;
+                pesoAdultos += peso;
+            } else if (edad >= 60) {
+                viejos++;
+                pesoViejos += peso;
+            }
 
-
+        }
+        System.out.println("Promedio de peso de niños: " + (pesoNinos / ninos));
+        System.out.println("Promedio de peso de jóvenes: " + (pesoJovenes / jovenes));
+        System.out.println("Promedio de peso de adultos: " + (pesoAdultos / adultos));
+        System.out.println("Promedio de peso de viejos: " + (pesoViejos / viejos));
 
     }
 }
