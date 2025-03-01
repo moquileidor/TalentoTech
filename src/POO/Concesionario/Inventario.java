@@ -1,6 +1,9 @@
 package POO.Concesionario;
 import java.util.ArrayList;
 
+/**
+ * @author : Jorge Alvarado
+ */
 public class Inventario {
 
     private ArrayList<Vehiculo> vehiculos;
@@ -19,6 +22,23 @@ public class Inventario {
 
     public ArrayList<Vehiculo> getVehiculos() {
         return vehiculos;
+    }
+
+    public ArrayList<Vehiculo> buscarPorMarca(String marca) {
+        try {
+            ArrayList<Vehiculo> resultados = new ArrayList<>();
+            for (Vehiculo v : vehiculos) {
+                if (v.getMarca().equalsIgnoreCase(marca)){
+                    resultados.add(v);
+                }
+            }
+            return resultados;
+        } catch (Exception e) {
+            System.out.println("Ha ocurrido un error: " + e);
+        } finally {
+            System.out.println("Hemos encontrado estos resultados. ");
+        }
+        return null;
     }
 
     @Override

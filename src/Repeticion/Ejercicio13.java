@@ -1,5 +1,4 @@
 package Repeticion;
-
 import java.util.Scanner;
 
 public class Ejercicio13 {
@@ -31,8 +30,5 @@ public class Ejercicio13 {
         System.out.println("Promedio de contaminación: " + (sumaContaminacion / totalAutos));
         System.out.println("Contaminación más baja: " + minContaminacion);
         System.out.println("Contaminación más alta: " + maxContaminacion);
-
-
-
     }
 }
